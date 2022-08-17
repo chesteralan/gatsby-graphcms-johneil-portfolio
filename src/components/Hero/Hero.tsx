@@ -4,11 +4,11 @@ type Props = {}
 
 const Hero = (props: Props) => {
   return (
-    <div className="container">
+    
       <div className="section started">
         <div
           className="slide"
-          style={{backgroundImage: "url(images/slide-bg-1.jpg)"}}
+          style={{backgroundImage: "url(images/slide-bg-1.jpeg)"}}
         ></div>
         <div className="centrize full-width">
           <div className="vertical-center">
@@ -45,7 +45,7 @@ const Hero = (props: Props) => {
           <i className="icon ion ion-chevron-down"></i>
         </a>
       </div>
-    </div>
+    
   )
 }
 

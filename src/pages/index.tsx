@@ -12,14 +12,19 @@ import Footer from "../components/Footer/Footer"
 const IndexPage = () => {
   return (
     <>
+    <div className="page">
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Portfolio />
-      <Blogs />
-      <Contacts />
-      <Footer />
+      <div className="container">
+        <Hero />
+        
+        <About />
+        <Services />
+        <Portfolio />
+        <Blogs />
+        <Contacts />
+        <Footer />
+      </div>
+      </div>
     </>
   )
 }

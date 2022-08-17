@@ -1,10 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 type Props = {}
 
 const Header = (props: Props) => {
+	
+	const [filled, setFilled] = useState(false);
+
+	const ScrollEvent = () => {
+		if (window.scrollY > 50) {
+			setFilled(true);
+		  } else {
+			setFilled(false);
+		  }
+	}
+
+	useEffect(() => {
+		window.addEventListener("scroll", ScrollEvent);
+		return () => {
+			window.removeEventListener("scroll", ScrollEvent);
+		};
+	},[])
+
   return (
-    <header className="header">
+    <header className={`header ${filled ? 'filled' : ''}`}>
 			<div className="fw">
 				<div className="logo">
 					<a href="#">Hendrix</a>
