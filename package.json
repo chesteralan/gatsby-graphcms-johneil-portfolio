@@ -18,6 +18,7 @@
   "dependencies": {
     "gatsby": "^4.21.0",
     "gatsby-plugin-google-analytics": "^4.21.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.21.0",
     "gatsby-plugin-manifest": "^4.21.0",
     "gatsby-plugin-sharp": "^4.21.0",
@@ -26,7 +27,8 @@
     "gatsby-source-graphcms": "^2.8.0",
     "gatsby-transformer-sharp": "^4.21.0",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "typed.js": "^2.0.12"
   },
   "devDependencies": {
     "@types/node": "^17.0.45",

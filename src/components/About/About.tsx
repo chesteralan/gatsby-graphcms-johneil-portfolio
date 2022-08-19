@@ -9,7 +9,7 @@ const About = (props: Props) => {
 					<div className="row">
 						<div className="col col-m-12 col-t-4 col-d-4">
 							<div className="profile">
-								<img src="images/profile.jpg" alt="" />
+								<img src="images/profile.jpeg" alt="" />
 							</div>
 						</div>
 						<div className="col col-m-12 col-t-8 col-d-8">

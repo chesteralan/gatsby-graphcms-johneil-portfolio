@@ -31,14 +31,14 @@ const Portfolio = (props: Props) => {
 							<div className="item">
 								<div className="desc">
 									<div className="image">
-										<a href="#popup-1" className="has-popup"><img src="images/works/work1.jpg" alt="" /></a>
+										<a href="#popup-1" className="has-popup"><img src="images/works/work1.jpeg" alt="" /></a>
 									</div>
 								</div>
 							</div>
 							<div id="popup-1" className="popup-box mfp-fade mfp-hide">
 								<div className="content">
 									<div className="image">
-										<img src="images/works/work1.jpg" alt="" />
+										<img src="images/works/work1.jpeg" alt="" />
 									</div>
 									<div className="desc">
 										<div className="category">Mockups</div>
@@ -55,14 +55,14 @@ const Portfolio = (props: Props) => {
 							<div className="item">
 								<div className="desc">
 									<div className="image">
-										<a href="#popup-2" className="has-popup"><img src="images/works/work2.jpg" alt="" /></a>
+										<a href="#popup-2" className="has-popup"><img src="images/works/work2.jpeg" alt="" /></a>
 									</div>
 								</div>
 							</div>
 							<div id="popup-2" className="popup-box mfp-fade mfp-hide">
 								<div className="content">
 									<div className="image">
-										<img src="images/works/work2.jpg" alt="" />
+										<img src="images/works/work2.jpeg" alt="" />
 									</div>
 									<div className="desc">
 										<div className="category">Branding</div>
@@ -80,14 +80,14 @@ const Portfolio = (props: Props) => {
 							<div className="item">
 								<div className="desc">
 									<div className="image">
-										<a href="#popup-3" className="has-popup"><img src="images/works/work3.jpg" alt="" /></a>
+										<a href="#popup-3" className="has-popup"><img src="images/works/work3.jpeg" alt="" /></a>
 									</div>
 								</div>
 							</div>
 							<div id="popup-3" className="popup-box mfp-fade mfp-hide">
 								<div className="content">
 									<div className="image">
-										<img src="images/works/work3.jpg" alt="" />
+										<img src="images/works/work3.jpeg" alt="" />
 									</div>
 									<div className="desc">
 										<div className="category">Mockups</div>
@@ -104,14 +104,14 @@ const Portfolio = (props: Props) => {
 							<div className="item">
 								<div className="desc">
 									<div className="image">
-										<a href="#popup-4" className="has-popup"><img src="images/works/work4.jpg" alt="" /></a>
+										<a href="#popup-4" className="has-popup"><img src="images/works/work4.jpeg" alt="" /></a>
 									</div>
 								</div>
 							</div>
 							<div id="popup-4" className="popup-box mfp-fade mfp-hide">
 								<div className="content">
 									<div className="image">
-										<img src="images/works/work4.jpg" alt="" />
+										<img src="images/works/work4.jpeg" alt="" />
 									</div>
 									<div className="desc">
 										<div className="category">Branding</div>
@@ -129,14 +129,14 @@ const Portfolio = (props: Props) => {
 							<div className="item">
 								<div className="desc">
 									<div className="image">
-										<a href="#popup-5" className="has-popup"><img src="images/works/work5.jpg" alt="" /></a>
+										<a href="#popup-5" className="has-popup"><img src="images/works/work5.jpeg" alt="" /></a>
 									</div>
 								</div>
 							</div>
 							<div id="popup-5" className="popup-box mfp-fade mfp-hide">
 								<div className="content">
 									<div className="image">
-										<img src="images/works/work5.jpg" alt="" />
+										<img src="images/works/work5.jpeg" alt="" />
 									</div>
 									<div className="desc">
 										<div className="category">Photography</div>
@@ -153,14 +153,14 @@ const Portfolio = (props: Props) => {
 							<div className="item">
 								<div className="desc">
 									<div className="image">
-										<a href="#popup-6" className="has-popup"><img src="images/works/work6.jpg" alt="" /></a>
+										<a href="#popup-6" className="has-popup"><img src="images/works/work6.jpeg" alt="" /></a>
 									</div>
 								</div>
 							</div>
 							<div id="popup-6" className="popup-box mfp-fade mfp-hide">
 								<div className="content">
 									<div className="image">
-										<img src="images/works/work6.jpg" alt="" />
+										<img src="images/works/work6.jpeg" alt="" />
 									</div>
 									<div className="desc">
 										<div className="category">UI Kits</div>

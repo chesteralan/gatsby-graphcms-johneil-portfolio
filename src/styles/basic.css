@@ -721,7 +721,7 @@ td {
 .centrize {
 	display: table !important;
 	table-layout: fixed !important;
-	height: 100% !important;
+	height: 100vh !important;
 	position: relative !important;
 }
 
@@ -775,4 +775,8 @@ blockquote {
 		top: 0px;
 	}
 
+}
+
+.mfp-hide {
+    display: none !important;
 }

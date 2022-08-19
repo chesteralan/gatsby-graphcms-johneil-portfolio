@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import NavLink from './NavLink'
 
 type Props = {}
 
@@ -30,11 +31,11 @@ const Header = (props: Props) => {
 				<a href="#" className="menu-btn"><span></span></a>
 				<div className="top-menu">
 					<ul>
-						<li><a href="#about-section">About</a></li>
-						<li><a href="#services-section">What I Do</a></li>
-						<li><a href="#works-section">Works</a></li>
-						<li><a href="#blog-section">Blog</a></li>
-						<li><a href="#contact-section">Contact</a></li>
+						<NavLink id="about-section">About</NavLink>
+						<NavLink id="services-section">What I Do</NavLink>
+						<NavLink id="works-section">Works</NavLink>
+						<NavLink id="blog-section">Blog</NavLink>
+						<NavLink id="contact-section">Contact</NavLink>
 					</ul>
 					<a href="#" className="close"></a>
 				</div>
