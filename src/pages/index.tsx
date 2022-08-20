@@ -5,9 +5,9 @@ import Hero from "../components/Hero/Hero"
 import About from "../components/About/About"
 import Services from "../components/Services/Services"
 import Portfolio from "../components/Portfolio/Portfolio"
-import Blogs from "../components/Blogs/Blogs"
 import Contacts from "../components/Contacts/Contacts"
 import Footer from "../components/Footer/Footer"
+import Testimonials from "../components/Testimonials/Testimonials"
 
 const IndexPage = () => {
   return (
@@ -16,11 +16,10 @@ const IndexPage = () => {
       <Header />
       <div className="container">
         <Hero />
-        
         <About />
         <Services />
         <Portfolio />
-        <Blogs />
+        <Testimonials />
         <Contacts />
         <Footer />
       </div>

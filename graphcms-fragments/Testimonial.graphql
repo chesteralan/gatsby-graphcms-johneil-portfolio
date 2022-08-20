@@ -1,11 +1,19 @@
-fragment Article on Article {
+fragment Testimonial on Testimonial {
   stage
   publishedAt
   updatedAt
   createdAt
   remoteId: id
-  title
-  summary
+  name
+  company
+  testimonial {
+    ... on RichText {
+      raw
+      html
+      markdown
+      text
+    }
+  }
   publishedBy {
     ... on User {
       remoteTypeName: __typename
@@ -27,7 +35,7 @@ fragment Article on Article {
       stage
     }
   }
-  thumbnail {
+  image {
     ... on Asset {
       remoteTypeName: __typename
       remoteId: id

@@ -39,15 +39,15 @@ fragment Asset on Asset {
       stage
     }
   }
-  thumbnailArticle {
-    ... on Article {
+  thumbnailPortfolio {
+    ... on Portfolio {
       remoteTypeName: __typename
       remoteId: id
       stage
     }
   }
-  thumbnailPortfolio {
-    ... on Portfolio {
+  imageTestimonial {
+    ... on Testimonial {
       remoteTypeName: __typename
       remoteId: id
       stage

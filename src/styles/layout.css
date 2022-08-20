@@ -789,3 +789,17 @@ footer .copy {
 .cursor-pointer {
 	cursor:pointer;
 }
+
+.carousel.carousel-slider {
+	padding-bottom: 50px;
+}
+
+.testimonial .image {
+	margin-top: 15px;
+	border-radius: 100%;
+}
+
+#testimonials-section .carousel-root {
+	max-width: 80%;
+	margin: 0 auto;
+}

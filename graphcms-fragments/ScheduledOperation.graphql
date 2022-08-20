@@ -37,11 +37,6 @@ fragment ScheduledOperation on ScheduledOperation {
   }
   status
   affectedDocuments {
-    ... on Article {
-      remoteTypeName: __typename
-      remoteId: id
-      stage
-    }
     ... on Asset {
       remoteTypeName: __typename
       remoteId: id
@@ -69,6 +64,11 @@ fragment ScheduledOperation on ScheduledOperation {
       stage
     }
     ... on SocialMediaLink {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Testimonial {
       remoteTypeName: __typename
       remoteId: id
       stage
