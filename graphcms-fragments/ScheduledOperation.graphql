@@ -37,10 +37,40 @@ fragment ScheduledOperation on ScheduledOperation {
   }
   status
   affectedDocuments {
+    ... on Article {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
     ... on Asset {
       remoteTypeName: __typename
       remoteId: id
       locale
+      stage
+    }
+    ... on Portfolio {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on PortfolioCategory {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Service {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on Settings {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+    ... on SocialMediaLink {
+      remoteTypeName: __typename
+      remoteId: id
       stage
     }
   }

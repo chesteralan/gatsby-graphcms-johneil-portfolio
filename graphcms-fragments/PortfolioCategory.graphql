@@ -1,16 +1,10 @@
-fragment Asset on Asset {
+fragment PortfolioCategory on PortfolioCategory {
   stage
-  locale
-  mimeType
-  size
-  width
-  height
-  fileName
-  handle
-  publishedAt(variation: COMBINED)
-  updatedAt(variation: COMBINED)
-  createdAt(variation: COMBINED)
+  publishedAt
+  updatedAt
+  createdAt
   remoteId: id
+  name
   publishedBy {
     ... on User {
       remoteTypeName: __typename
@@ -32,21 +26,7 @@ fragment Asset on Asset {
       stage
     }
   }
-  imageSettings {
-    ... on Settings {
-      remoteTypeName: __typename
-      remoteId: id
-      stage
-    }
-  }
-  thumbnailArticle {
-    ... on Article {
-      remoteTypeName: __typename
-      remoteId: id
-      stage
-    }
-  }
-  thumbnailPortfolio {
+  portfolios {
     ... on Portfolio {
       remoteTypeName: __typename
       remoteId: id
@@ -60,5 +40,4 @@ fragment Asset on Asset {
       stage
     }
   }
-  url
 }

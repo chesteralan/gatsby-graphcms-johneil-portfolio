@@ -7,6 +7,7 @@ type Props = {
 
 const Modal = ({ children }: Props) => {
     const el = document.createElement('div') as HTMLDivElement;
+    el.className = "modal";
     const parent = document.getElementById('___gatsby') as HTMLElement;
     useEffect(() => {
       parent.appendChild(el);

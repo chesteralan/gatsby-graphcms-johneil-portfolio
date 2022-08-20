@@ -545,13 +545,6 @@
 	font-size: 0;
 }
 
-.box-items .box-item .image a img {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
 /* 7. Contacts */
 .contact-form {
 	margin-top: 25px;
@@ -752,4 +745,47 @@ footer .copy {
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
 	opacity: 0;
+}
+
+.modal > .modal-wrapper {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: #CCC;
+	top: 0;
+	left: 0;
+	z-index: 998;
+	opacity: 0.5;
+}
+
+.modal > .modal-content {
+	position: fixed;
+	top: 0;
+	left: calc(50% - 310px);
+	z-index: 999;
+}
+
+.modal .close {
+	color: #333;
+	background: #ffffff;
+	width: 44px;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-size: 28px;
+    font-family: Arial, Baskerville, monospace;
+	border-radius: 10px;
+}
+
+.modal .close:focus {
+	border-bottom: none;
+}
+
+.cursor-pointer {
+	cursor:pointer;
 }

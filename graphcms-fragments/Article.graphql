@@ -1,16 +1,11 @@
-fragment Asset on Asset {
+fragment Article on Article {
   stage
-  locale
-  mimeType
-  size
-  width
-  height
-  fileName
-  handle
-  publishedAt(variation: COMBINED)
-  updatedAt(variation: COMBINED)
-  createdAt(variation: COMBINED)
+  publishedAt
+  updatedAt
+  createdAt
   remoteId: id
+  title
+  summary
   publishedBy {
     ... on User {
       remoteTypeName: __typename
@@ -32,24 +27,11 @@ fragment Asset on Asset {
       stage
     }
   }
-  imageSettings {
-    ... on Settings {
+  thumbnail {
+    ... on Asset {
       remoteTypeName: __typename
       remoteId: id
-      stage
-    }
-  }
-  thumbnailArticle {
-    ... on Article {
-      remoteTypeName: __typename
-      remoteId: id
-      stage
-    }
-  }
-  thumbnailPortfolio {
-    ... on Portfolio {
-      remoteTypeName: __typename
-      remoteId: id
+      locale
       stage
     }
   }
@@ -60,5 +42,4 @@ fragment Asset on Asset {
       stage
     }
   }
-  url
 }

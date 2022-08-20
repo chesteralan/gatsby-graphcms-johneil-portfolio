@@ -26,6 +26,14 @@ const Socials = (props: Props) => {
       switch(s) {
         case 'facebook':
           return 'ion ion-social-facebook';
+        case 'github':
+          return 'ion ion-social-github';
+        case 'twitter':
+          return 'ion ion-social-twitter';
+        case 'youtube':
+          return 'ion ion-social-youtube';
+        case 'googleplus':
+          return 'ion ion-social-googleplus';
         default:
           return ""
       }
