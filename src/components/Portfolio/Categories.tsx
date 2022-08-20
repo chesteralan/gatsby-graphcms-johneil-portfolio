@@ -32,11 +32,11 @@ const Categories = ({ useFilter }: Props) => {
 						<div className={`f_btn ${currentCategory==="" ? "active": ""}`} onClick={() => setCurrentCategory("")}>
 							<label><input type="radio" name="fl_radio" value="box-item" />All</label>
 						</div>
-						{filteredCategories.map(({ name }: PortfolioCategory, index:number) => (<>
-                        <div className={`f_btn ${currentCategory===name ? "active": ""}`} onClick={() => setCurrentCategory(name)}>
+						{filteredCategories.map(({ name }: PortfolioCategory, index:number) => (
+                        <div key={index.toString()} className={`f_btn ${currentCategory===name ? "active": ""}`} onClick={() => setCurrentCategory(name)}>
 							<label>{name}</label>
 						</div>
-                        </>))}
+                      ))}
 					</div>
   )
 }
