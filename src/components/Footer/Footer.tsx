@@ -1,18 +1,28 @@
 import React from 'react'
+import Socials from '../Hero/Socials'
+import { graphql, useStaticQuery } from "gatsby";
 
 type Props = {}
 
+
 const Footer = (props: Props) => {
+
+  const data = useStaticQuery(graphql`
+    {
+        graphCmsSettings(key: {eq: DisplaySiteName}) {
+          value
+        }
+      }
+    `);
+
+    const title = data.graphCmsSettings?.value || "Hendrix"
+
+    const currentYear = new Date().getFullYear();
+
   return (
     <footer className="align-center">
-    <div className="socials">
-        <a target="blank" href="https://www.facebook.com"><i className="icon ion ion-social-facebook"></i></a>
-        <a target="blank" href="https://github.com"><i className="icon ion ion-social-github"></i></a>
-        <a target="blank" href="https://twitter.com"><i className="icon ion ion-social-twitter"></i></a>
-        <a target="blank" href="https://www.youtube.com"><i className="icon ion ion-social-youtube"></i></a>
-        <a target="blank" href="https://plus.google.com"><i className="icon ion ion-social-googleplus"></i></a>
-    </div>
-    <div className="copy">© 2018 Hendrix. all rights reserved.</div>
+    <Socials />
+    <div className="copy">&copy; {currentYear} {title}. All Rights Reserved.</div>
 </footer>
   )
 }

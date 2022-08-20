@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Logo from './Logo';
 import NavLink from './NavLink'
 
 type Props = {}
@@ -25,9 +26,7 @@ const Header = (props: Props) => {
   return (
     <header className={`header ${filled ? 'filled' : ''}`}>
 			<div className="fw">
-				<div className="logo">
-					<a href="#">Hendrix</a>
-				</div>
+				<Logo />
 				<a href="#" className="menu-btn"><span></span></a>
 				<div className="top-menu">
 					<ul>

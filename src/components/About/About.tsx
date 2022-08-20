@@ -1,4 +1,8 @@
 import React from 'react'
+import Descriptions from './Description'
+import DownloadLink from './DownloadLink'
+import ProfilePic from './ProfilePic'
+import Title from './Title'
 
 type Props = {}
 
@@ -9,18 +13,16 @@ const About = (props: Props) => {
 					<div className="row">
 						<div className="col col-m-12 col-t-4 col-d-4">
 							<div className="profile">
-								<img src="images/profile.jpeg" alt="" />
+								<ProfilePic />
 							</div>
 						</div>
 						<div className="col col-m-12 col-t-8 col-d-8">
 							<div className="text-box">
-								<h1>I'm Steven Hendrix, <br />Web Designer & Web Developer <br />from United States, California.</h1>
-								<p>
-									I have rich experience in web site design & building and customization. Also I am good at html, css, javascript, wordpress, php, jquery, bootstrap. I love to talk with you about our unique approach. Feel free to contact me writing an email with your project idea.
-								</p>
+								<Title />
+								<Descriptions />
 							</div>
 							<div className="bts">
-								<a href="#" className="btn extra">Download Resume</a>
+								<DownloadLink />
 							</div>
 						</div>
 					</div>

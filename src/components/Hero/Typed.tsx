@@ -1,22 +1,27 @@
 import React, { useRef, useEffect } from 'react'
 import Typed from 'typed.js'
+import { graphql, useStaticQuery } from "gatsby";
 
 type Props = {}
 
 const TypedComponent = (props: Props) => {
+
+  const data = useStaticQuery(graphql`
+    {
+        graphCmsSettings(key: {eq: Hero_Keywords}) {
+          value
+        }
+      }
+    `);
+
+    const Hero_Keywords = data.graphCmsSettings?.value || "Developer,Photographer"
 
     const el = useRef(null);
     const typed = useRef<any>(null);
 
     useEffect(() => {
         const options = {
-            strings: [
-                'Developer',
-                `Photographer`,
-                `Coder`,
-                `Blogger`,
-                `Freelancer`
-          ],
+          strings: Hero_Keywords.split(","),
           typeSpeed: 50,
           backSpeed: 50,
           backDelay: 5000,
