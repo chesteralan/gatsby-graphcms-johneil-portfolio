@@ -18,7 +18,7 @@ const message: Message = {
   subject: process.env.CONTACT_FORM_SUBJECT,
 }
 
-const handler = (req:any, res:any) => {
+const contactHandler = (req:any, res:any) => {
   try {
     if (req.method !== "POST") {
       res.json({ message: "Error" })
@@ -52,4 +52,4 @@ const handler = (req:any, res:any) => {
   }
 }
 
-module.exports = handler
+module.exports = contactHandler
