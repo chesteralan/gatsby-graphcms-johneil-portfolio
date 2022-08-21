@@ -22,7 +22,7 @@ const Hero = (props: Props) => {
   
   return (
     
-      <div className="section started">
+      <div className="section started" id="hero-section">
         <div
           className="slide"
           style={{backgroundImage: `url(${Hero_Background_Image})`}}

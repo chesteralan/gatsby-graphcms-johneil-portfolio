@@ -28,7 +28,7 @@ const Header = (props: Props) => {
     <header className={`header ${filled ? 'filled' : ''}`}>
 			<div className="fw">
 				<Logo />
-				<a className={`menu-btn ${menuActive ? 'active' : ''}`} onClick={() => setMenuActive(!menuActive)}><span></span></a>
+				<a className={`menu-btn cursor-pointer ${menuActive ? 'active' : ''}`} onClick={() => setMenuActive(!menuActive)}><span></span></a>
 				<div className={`top-menu ${menuActive ? 'active' : ''}`}>
 					<ul>
 						<NavLink id="about-section">About</NavLink>

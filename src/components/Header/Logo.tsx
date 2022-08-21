@@ -17,7 +17,7 @@ const Logo = (props: Props) => {
 
   return (
     <div className="logo">
-      <a href="#">{title}</a>
+      <a href="#hero-section">{title}</a>
     </div>
   )
 }

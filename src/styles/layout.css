@@ -245,6 +245,7 @@
 .section {
 	padding: 120px 0;
 	position: relative;
+	min-height: 650px;
 }
 
 @media (max-width: 720px) {
