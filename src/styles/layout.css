@@ -551,7 +551,7 @@
 }
 
 .alert-success {
-	display: none;
+	display: block;
 }
 
 .alert-success p {
