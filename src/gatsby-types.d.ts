@@ -1305,6 +1305,7 @@ type GraphCMS_AssetFieldsEnum =
   | 'imageSettings.image.thumbnailPortfolio.stage'
   | 'imageSettings.image.thumbnailPortfolio.title'
   | 'imageSettings.image.thumbnailPortfolio.updatedAt'
+  | 'imageSettings.image.thumbnailPortfolio.youtubeId'
   | 'imageSettings.image.updatedAt'
   | 'imageSettings.image.updatedBy.children'
   | 'imageSettings.image.updatedBy.createdAt'
@@ -1625,6 +1626,7 @@ type GraphCMS_AssetFieldsEnum =
   | 'imageTestimonial.image.thumbnailPortfolio.stage'
   | 'imageTestimonial.image.thumbnailPortfolio.title'
   | 'imageTestimonial.image.thumbnailPortfolio.updatedAt'
+  | 'imageTestimonial.image.thumbnailPortfolio.youtubeId'
   | 'imageTestimonial.image.updatedAt'
   | 'imageTestimonial.image.updatedBy.children'
   | 'imageTestimonial.image.updatedBy.createdAt'
@@ -2229,6 +2231,7 @@ type GraphCMS_AssetFieldsEnum =
   | 'thumbnailPortfolio.portfolioCategories.portfolios.stage'
   | 'thumbnailPortfolio.portfolioCategories.portfolios.title'
   | 'thumbnailPortfolio.portfolioCategories.portfolios.updatedAt'
+  | 'thumbnailPortfolio.portfolioCategories.portfolios.youtubeId'
   | 'thumbnailPortfolio.portfolioCategories.publishedAt'
   | 'thumbnailPortfolio.portfolioCategories.publishedBy.children'
   | 'thumbnailPortfolio.portfolioCategories.publishedBy.createdAt'
@@ -2479,6 +2482,7 @@ type GraphCMS_AssetFieldsEnum =
   | 'thumbnailPortfolio.thumbnail.thumbnailPortfolio.stage'
   | 'thumbnailPortfolio.thumbnail.thumbnailPortfolio.title'
   | 'thumbnailPortfolio.thumbnail.thumbnailPortfolio.updatedAt'
+  | 'thumbnailPortfolio.thumbnail.thumbnailPortfolio.youtubeId'
   | 'thumbnailPortfolio.thumbnail.updatedAt'
   | 'thumbnailPortfolio.thumbnail.updatedBy.children'
   | 'thumbnailPortfolio.thumbnail.updatedBy.createdAt'
@@ -2521,6 +2525,7 @@ type GraphCMS_AssetFieldsEnum =
   | 'thumbnailPortfolio.updatedBy.remoteTypeName'
   | 'thumbnailPortfolio.updatedBy.stage'
   | 'thumbnailPortfolio.updatedBy.updatedAt'
+  | 'thumbnailPortfolio.youtubeId'
   | 'updatedAt'
   | 'updatedBy.children'
   | 'updatedBy.children.children'
@@ -2680,6 +2685,7 @@ type GraphCMS_Portfolio = Node & {
   readonly title: Scalars['String'];
   readonly updatedAt: Scalars['JSON'];
   readonly updatedBy: Maybe<GraphCMS_User>;
+  readonly youtubeId: Scalars['String'];
 };
 
 type GraphCMS_PortfolioCategory = Node & {
@@ -3007,6 +3013,7 @@ type GraphCMS_PortfolioCategoryFieldsEnum =
   | 'portfolios.portfolioCategories.portfolios.stage'
   | 'portfolios.portfolioCategories.portfolios.title'
   | 'portfolios.portfolioCategories.portfolios.updatedAt'
+  | 'portfolios.portfolioCategories.portfolios.youtubeId'
   | 'portfolios.portfolioCategories.publishedAt'
   | 'portfolios.portfolioCategories.publishedBy.children'
   | 'portfolios.portfolioCategories.publishedBy.createdAt'
@@ -3257,6 +3264,7 @@ type GraphCMS_PortfolioCategoryFieldsEnum =
   | 'portfolios.thumbnail.thumbnailPortfolio.stage'
   | 'portfolios.thumbnail.thumbnailPortfolio.title'
   | 'portfolios.thumbnail.thumbnailPortfolio.updatedAt'
+  | 'portfolios.thumbnail.thumbnailPortfolio.youtubeId'
   | 'portfolios.thumbnail.updatedAt'
   | 'portfolios.thumbnail.updatedBy.children'
   | 'portfolios.thumbnail.updatedBy.createdAt'
@@ -3299,6 +3307,7 @@ type GraphCMS_PortfolioCategoryFieldsEnum =
   | 'portfolios.updatedBy.remoteTypeName'
   | 'portfolios.updatedBy.stage'
   | 'portfolios.updatedBy.updatedAt'
+  | 'portfolios.youtubeId'
   | 'publishedAt'
   | 'publishedBy.children'
   | 'publishedBy.children.children'
@@ -4048,6 +4057,7 @@ type GraphCMS_PortfolioFieldsEnum =
   | 'portfolioCategories.portfolios.updatedBy.remoteTypeName'
   | 'portfolioCategories.portfolios.updatedBy.stage'
   | 'portfolioCategories.portfolios.updatedBy.updatedAt'
+  | 'portfolioCategories.portfolios.youtubeId'
   | 'portfolioCategories.publishedAt'
   | 'portfolioCategories.publishedBy.children'
   | 'portfolioCategories.publishedBy.children.children'
@@ -4917,6 +4927,7 @@ type GraphCMS_PortfolioFieldsEnum =
   | 'thumbnail.thumbnailPortfolio.updatedBy.remoteTypeName'
   | 'thumbnail.thumbnailPortfolio.updatedBy.stage'
   | 'thumbnail.thumbnailPortfolio.updatedBy.updatedAt'
+  | 'thumbnail.thumbnailPortfolio.youtubeId'
   | 'thumbnail.updatedAt'
   | 'thumbnail.updatedBy.children'
   | 'thumbnail.updatedBy.children.children'
@@ -4997,7 +5008,8 @@ type GraphCMS_PortfolioFieldsEnum =
   | 'updatedBy.remoteId'
   | 'updatedBy.remoteTypeName'
   | 'updatedBy.stage'
-  | 'updatedBy.updatedAt';
+  | 'updatedBy.updatedAt'
+  | 'youtubeId';
 
 type GraphCMS_PortfolioFilterInput = {
   readonly children: InputMaybe<NodeFilterListInput>;
@@ -5019,6 +5031,7 @@ type GraphCMS_PortfolioFilterInput = {
   readonly title: InputMaybe<StringQueryOperatorInput>;
   readonly updatedAt: InputMaybe<JSONQueryOperatorInput>;
   readonly updatedBy: InputMaybe<GraphCMS_UserFilterInput>;
+  readonly youtubeId: InputMaybe<StringQueryOperatorInput>;
 };
 
 type GraphCMS_PortfolioFilterListInput = {
@@ -7553,6 +7566,7 @@ type GraphCMS_SettingsFieldsEnum =
   | 'image.thumbnailPortfolio.updatedBy.remoteTypeName'
   | 'image.thumbnailPortfolio.updatedBy.stage'
   | 'image.thumbnailPortfolio.updatedBy.updatedAt'
+  | 'image.thumbnailPortfolio.youtubeId'
   | 'image.updatedAt'
   | 'image.updatedBy.children'
   | 'image.updatedBy.children.children'
@@ -9291,6 +9305,7 @@ type GraphCMS_TestimonialFieldsEnum =
   | 'image.thumbnailPortfolio.updatedBy.remoteTypeName'
   | 'image.thumbnailPortfolio.updatedBy.stage'
   | 'image.thumbnailPortfolio.updatedBy.updatedAt'
+  | 'image.thumbnailPortfolio.youtubeId'
   | 'image.updatedAt'
   | 'image.updatedBy.children'
   | 'image.updatedBy.children.children'
@@ -10891,6 +10906,7 @@ type Query_graphCmsPortfolioArgs = {
   title: InputMaybe<StringQueryOperatorInput>;
   updatedAt: InputMaybe<JSONQueryOperatorInput>;
   updatedBy: InputMaybe<GraphCMS_UserFilterInput>;
+  youtubeId: InputMaybe<StringQueryOperatorInput>;
 };
 
 

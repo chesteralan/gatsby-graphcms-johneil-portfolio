@@ -17,6 +17,7 @@ export type Portfolio = {
   thumbnail: IGatsbyImageData;
   portfolioCategories: PortfolioCategory[];
   link: string;
+  youtubeId: string;
 }
 
 const Portfolio = (props: Props) => {
@@ -35,7 +36,8 @@ const Portfolio = (props: Props) => {
           portfolioCategories {
             name
           }
-		  link
+		      link
+          youtubeId
         }
       }
     }
