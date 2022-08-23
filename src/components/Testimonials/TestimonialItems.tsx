@@ -22,8 +22,8 @@ const TestimonialItems = ({ testimonial }: Props) => {
   return (
     <div className="testimonial">
         <div dangerouslySetInnerHTML={{ __html: message.html }} />
-        {name}<br />
-        {company}<br />
+        <div className="name">{name}</div>
+        {company && company !== "" && <div className="company">{company}</div>}
         <GatsbyImage image={img} alt={name} className="image" />
     </div>
 
