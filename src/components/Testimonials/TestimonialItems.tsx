@@ -2,8 +2,6 @@ import React from 'react'
 import type { Testimonial } from './Testimonials'
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image"
 
-import 'react-responsive-carousel/lib/styles/carousel.css';
-
 type Props = {
     testimonial: Testimonial
 }

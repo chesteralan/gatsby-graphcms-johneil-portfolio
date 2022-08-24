@@ -4,6 +4,8 @@ import TestimonialItems from "./TestimonialItems";
 import type { IGatsbyImageData } from "gatsby-plugin-image"
 import { Carousel } from 'react-responsive-carousel';
 
+import 'react-responsive-carousel/lib/styles/carousel.css';
+
 type Props = {}
 
 export type Message = {
