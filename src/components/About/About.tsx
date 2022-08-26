@@ -1,33 +1,33 @@
-import React from 'react'
-import Descriptions from './Description'
-import DownloadLink from './DownloadLink'
-import ProfilePic from './ProfilePic'
-import Title from './Title'
+import React from "react"
+import Descriptions from "./Description"
+import DownloadLink from "./DownloadLink"
+import ProfilePic from "./ProfilePic"
+import Title from "./Title"
 
 type Props = {}
 
 const About = (props: Props) => {
   return (
     <div className="section about align-left" id="about-section">
-				<div className="fw">
-					<div className="row">
-						<div className="col col-m-12 col-t-4 col-d-4">
-							<div className="profile">
-								<ProfilePic />
-							</div>
-						</div>
-						<div className="col col-m-12 col-t-8 col-d-8">
-							<div className="text-box">
-								<Title />
-								<Descriptions />
-							</div>
-							<div className="bts">
-								<DownloadLink />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+      <div className="fw">
+        <div className="row">
+          <div className="col col-m-12 col-t-4 col-d-4">
+            <div className="profile">
+              <ProfilePic />
+            </div>
+          </div>
+          <div className="col col-m-12 col-t-8 col-d-8">
+            <div className="text-box">
+              <Title />
+              <Descriptions />
+            </div>
+            <div className="bts">
+              <DownloadLink />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 

@@ -53,6 +53,13 @@ fragment Asset on Asset {
       stage
     }
   }
+  iconImageService {
+    ... on Service {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
   scheduledIn {
     ... on ScheduledOperation {
       remoteTypeName: __typename

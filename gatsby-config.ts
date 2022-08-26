@@ -1,5 +1,5 @@
 import type { GatsbyConfig } from "gatsby"
-require("dotenv").config();
+require("dotenv").config()
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -12,7 +12,7 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     {
-      resolve: 'gatsby-source-graphcms',
+      resolve: "gatsby-source-graphcms",
       options: {
         endpoint: process.env.GRAPHCMS_ENDPOINT,
         token: process.env.GRAPHCMS_TOKEN,
@@ -49,9 +49,9 @@ const config: GatsbyConfig = {
           `Kaushan Script`,
           `Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i`,
         ],
-        display: 'swap'
-      }
-    }
+        display: "swap",
+      },
+    },
   ],
 }
 

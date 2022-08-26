@@ -775,21 +775,21 @@ blockquote {
 }
 
 .testimonial .name {
-	margin: 10px 0;
-    position: relative;
-    font-size: 13px;
-    color: #292929;
-    letter-spacing: 0.1em;
-    font-weight: 500;
-    text-transform: uppercase;
+  margin: 10px 0;
+  position: relative;
+  font-size: 13px;
+  color: #292929;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .testimonial .company {
-	margin: 10px 0;
-    position: relative;
-    font-size: 13px;
-    color: #292929;
-    letter-spacing: 0.1em;
-    font-weight: 500;
-    text-transform: uppercase;
+  margin: 10px 0;
+  position: relative;
+  font-size: 13px;
+  color: #292929;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-transform: uppercase;
 }

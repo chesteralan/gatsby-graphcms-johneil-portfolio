@@ -1,10 +1,10 @@
 type Message = {
-    from?: string | undefined;
-    to?: string;
-    cc?: string;
-    subject?: string;
-    text?: string;
-    html?: string;
+  from?: string | undefined
+  to?: string
+  cc?: string
+  subject?: string
+  text?: string
+  html?: string
 }
 
 const sendgrid = require("@sendgrid/mail")
@@ -18,7 +18,7 @@ const message: Message = {
   subject: process.env.CONTACT_FORM_SUBJECT,
 }
 
-const contactHandler = (req:any, res:any) => {
+const contactHandler = (req: any, res: any) => {
   try {
     if (req.method !== "POST") {
       res.json({ message: "Error" })
@@ -26,7 +26,7 @@ const contactHandler = (req:any, res:any) => {
 
     if (req.body) {
       message.cc = req.body.email
-      const text:string = `${req.body.message} --- ${req.body.name} (${req.body.email})`;
+      const text: string = `${req.body.message} --- ${req.body.name} (${req.body.email})`
       message.text = text
       message.html = text
     }
@@ -37,7 +37,7 @@ const contactHandler = (req:any, res:any) => {
           message: "Message successfully sent!",
         })
       },
-      (error:any) => {
+      (error: any) => {
         console.error(error)
         if (error.response) {
           return res.status(500).json({

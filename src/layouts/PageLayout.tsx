@@ -1,15 +1,11 @@
-import React from 'react'
+import React from "react"
 
 type Props = {
-    children: any;
+  children: any
 }
 
 const PageLayout = ({ children }: Props) => {
-  return (
-    <>
-    {children}
-    </>
-  )
+  return <>{children}</>
 }
 
 export default PageLayout

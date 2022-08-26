@@ -12,17 +12,17 @@ import Testimonials from "../components/Testimonials/Testimonials"
 const IndexPage = () => {
   return (
     <>
-    <div className="page">
-      <Header />
-      <div className="container">
-        <Hero />
-        <About />
-        <Services />
-        <Portfolio />
-        <Testimonials />
-        <Contacts />
-        <Footer />
-      </div>
+      <div className="page">
+        <Header />
+        <div className="container">
+          <Hero />
+          <About />
+          <Services />
+          <Portfolio />
+          <Testimonials />
+          <Contacts />
+          <Footer />
+        </div>
       </div>
     </>
   )

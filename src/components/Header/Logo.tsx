@@ -1,19 +1,18 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby"
 
 type Props = {}
 
 const Logo = (props: Props) => {
-
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     {
-        graphCmsSettings(key: {eq: DisplaySiteName}) {
-          value
-        }
+      graphCmsSettings(key: { eq: DisplaySiteName }) {
+        value
       }
-    `);
+    }
+  `)
 
-    const title = data.graphCmsSettings?.value || "Hendrix"
+  const title = data.graphCmsSettings?.value || "Hendrix"
 
   return (
     <div className="logo">
