@@ -31,7 +31,7 @@ const Redeploy = (props: Props) => {
         />
       )}
       {deployed && (
-        <p>
+        <p style={styles}>
           Request is sent... Please wait for 10 minutes and check your site...
         </p>
       )}
