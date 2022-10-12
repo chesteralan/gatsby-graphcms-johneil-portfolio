@@ -416,6 +416,7 @@
 /* 5. Services */
 .section.services .service-item {
   margin-top: 25px;
+  min-height: 250px;
 }
 
 .section.services .service-item .circle {
