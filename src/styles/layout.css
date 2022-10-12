@@ -509,6 +509,7 @@
 .box-items .box-item {
   margin: 40px 0 0 0;
   position: relative;
+  min-height: 203px;
 }
 
 .box-items .box-item:hover .desc {
