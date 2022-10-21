@@ -1,6 +1,6 @@
 import React from "react"
 import Socials from "../Hero/Socials"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 type Props = {}
 
@@ -21,7 +21,8 @@ const Footer = (props: Props) => {
     <footer className="align-center">
       <Socials />
       <div className="copy">
-        &copy; {currentYear} {title}. All Rights Reserved.
+        &copy; {currentYear} {title}. All Rights Reserved.{" "}
+        <Link to="/privacy-policy">Privacy Policy</Link>
       </div>
     </footer>
   )

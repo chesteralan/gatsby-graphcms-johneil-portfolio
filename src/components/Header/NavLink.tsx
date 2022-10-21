@@ -11,6 +11,7 @@ const NavLink = ({ id, children }: Props) => {
   const ScrollEvent = () => {
     const element = document.getElementById(id) as HTMLElement
     if (
+      element &&
       window.scrollY >= element.offsetTop - 96 &&
       window.scrollY <= element.offsetTop + element.offsetHeight - 96
     ) {
@@ -29,7 +30,7 @@ const NavLink = ({ id, children }: Props) => {
 
   return (
     <li className={active ? `active` : ``}>
-      <a href={`#${id}`}>{children}</a>
+      <a href={`/#${id}`}>{children}</a>
     </li>
   )
 }
