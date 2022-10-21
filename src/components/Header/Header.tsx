@@ -41,7 +41,7 @@ const Header = (props: Props) => {
             <NavLink id="testimonials-section">Testimonials</NavLink>
             <NavLink id="contact-section">Contact</NavLink>
           </ul>
-          <a href="/#" rel="noopener" className="close"></a>
+          <a href="/#" rel="noopener" className="close" title="close"></a>
         </div>
       </div>
     </header>

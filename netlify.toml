@@ -1,0 +1,10 @@
+[build]
+  command = "yarn build"
+  functions = "functions"
+  publish = "public"
+
+[dev]
+  command = "yarn develop"
+  targetPort = 8000
+  port = 8887 # The port that the netlify dev will be accessible on
+  publish = "public" # The path to your static content folder
