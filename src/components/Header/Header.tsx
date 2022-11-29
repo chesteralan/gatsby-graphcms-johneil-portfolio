@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import Logo from "./Logo"
 import NavLink from "./NavLink"
+import { Link } from "gatsby"
 
 type Props = {}
 
@@ -39,7 +40,9 @@ const Header = (props: Props) => {
             <NavLink id="services-section">What I Do</NavLink>
             <NavLink id="works-section">Works</NavLink>
             <NavLink id="testimonials-section">Testimonials</NavLink>
-            <NavLink id="contact-section">Contact</NavLink>
+            <li>
+              <Link to="/work-with-me">Work With Me</Link>
+            </li>
           </ul>
           <a href="/#" rel="noopener" className="close" title="close"></a>
         </div>

@@ -1,6 +1,6 @@
 import React from "react"
 import Descriptions from "./Description"
-import DownloadLink from "./DownloadLink"
+import FormLink from "./FormLink"
 import ProfilePic from "./ProfilePic"
 import Title from "./Title"
 
@@ -22,7 +22,7 @@ const About = (props: Props) => {
               <Descriptions />
             </div>
             <div className="bts">
-              <DownloadLink />
+              <FormLink />
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ const Contacts = (props: Props) => {
   const [message, setMessage] = useState<Message>({})
 
   const validateMessage = () => {
-    if (message === {}) {
+    if (Object.entries(message).length === 0) {
       setActive(false)
       return
     }
