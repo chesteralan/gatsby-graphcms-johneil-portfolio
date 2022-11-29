@@ -13,10 +13,13 @@ const PortfolioItem = ({ portfolio }: Props) => {
   const image = getImage(thumbnail) as IGatsbyImageData
 
   return (
-    <div className="col col-m-12 col-t-6 col-d-4 box-item f-mockups">
+    <div className="col box-item f-mockups">
       <div className="item">
         <div className="desc">
-          <div className="image cursor-pointer" onClick={() => setActive(true)}>
+          <div
+            className="image cursor-pointer portfolio-item"
+            onClick={() => setActive(true)}
+          >
             <GatsbyImage image={image} alt={title} />
           </div>
           {active && (

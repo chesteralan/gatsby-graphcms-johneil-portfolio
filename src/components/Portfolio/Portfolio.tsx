@@ -3,6 +3,7 @@ import Categories from "./Categories"
 import PortfolioItem from "./PortfolioItem"
 import { graphql, useStaticQuery } from "gatsby"
 import type { IGatsbyImageData } from "gatsby-plugin-image"
+import Masonry from "react-masonry-css"
 
 type Props = {}
 
@@ -52,6 +53,13 @@ const Portfolio = (props: Props) => {
     return categories.includes(currentCategory)
   })
 
+  const breakpointColumnsObj = {
+    default: 3,
+    1100: 3,
+    700: 2,
+    500: 1,
+  }
+
   return (
     <div className="section works align-left" id="works-section">
       <div className="fw">
@@ -60,12 +68,15 @@ const Portfolio = (props: Props) => {
         </div>
 
         <Categories useFilter={[currentCategory, setCurrentCategory]} />
-
-        <div className="row box-items">
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column box-items"
+        >
           {filteredPortfolios.map((portfolio: Portfolio, index: number) => (
             <PortfolioItem key={index.toString()} portfolio={portfolio} />
           ))}
-        </div>
+        </Masonry>
         <div className="clear"></div>
       </div>
     </div>
