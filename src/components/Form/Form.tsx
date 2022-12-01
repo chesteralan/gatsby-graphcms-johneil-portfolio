@@ -17,7 +17,7 @@ const Form = (props: Props) => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfnWeMCk9N5HZw-0PgI_92v5OURbbNzgRYsVCjWhxsvkq5ONA/viewform?embedded=true"
             width="100%"
-            height="1700"
+            height="1800"
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}

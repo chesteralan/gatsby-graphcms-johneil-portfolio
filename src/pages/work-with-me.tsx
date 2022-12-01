@@ -3,6 +3,7 @@ import type { HeadFC } from "gatsby"
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 import Form from "../components/Form/Form"
+import Testimonials from "../components/Testimonials/Testimonials"
 
 const IndexPage = () => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = () => {
         <Header />
         <div className="container">
           <Form />
+          <Testimonials />
           <Footer />
         </div>
       </div>

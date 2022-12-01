@@ -7,7 +7,6 @@ import Services from "../components/Services/Services"
 import Portfolio from "../components/Portfolio/Portfolio"
 import Footer from "../components/Footer/Footer"
 import Testimonials from "../components/Testimonials/Testimonials"
-import Form from "../components/Form/Form"
 
 const IndexPage = () => {
   return (
