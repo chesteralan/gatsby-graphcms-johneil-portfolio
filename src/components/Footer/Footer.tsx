@@ -19,7 +19,7 @@ const Footer = (props: Props) => {
 
   return (
     <footer className="align-center">
-      <Socials />
+      <Socials dark={true} />
       <div className="copy">
         &copy; {currentYear} {title}. All Rights Reserved.{" "}
         <Link to="/privacy-policy">Privacy Policy</Link>

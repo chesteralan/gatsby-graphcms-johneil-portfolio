@@ -333,6 +333,13 @@
 
 .section.started .socials a .icon {
   color: #ffffff;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  margin: 10px auto;
 }
 
 .section.started .socials a:hover {
@@ -685,6 +692,13 @@ footer .copy {
   -moz-transition: all 0.4s ease 0s;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center;
+  margin: 10px auto;
 }
 
 .socials a:hover {

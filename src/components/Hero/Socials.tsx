@@ -1,19 +1,29 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-type Props = {}
+type Props = {
+  dark?: boolean
+}
 
 type Social = {
   socialMedia: string
   url: string
+  icon: any
+  iconDark: any
 }
-const Socials = (props: Props) => {
+const Socials = ({ dark = false }: Props) => {
   const data = useStaticQuery(graphql`
     {
       allGraphCmsSocialMediaLink {
         nodes {
           socialMedia
           url
+          icon {
+            url
+          }
+          iconDark {
+            url
+          }
         }
       }
     }
@@ -23,11 +33,25 @@ const Socials = (props: Props) => {
 
   return (
     <div className="socials">
-      {socials.map(({ socialMedia, url }: Social, index: number) => (
-        <a key={index.toString()} target="blank" href={url}>
-          <i className={`icon ion ion-social-${socialMedia}`}></i>
-        </a>
-      ))}
+      {socials.map(
+        ({ socialMedia, url, icon, iconDark }: Social, index: number) => {
+          return (
+            <a
+              title={socialMedia}
+              key={index.toString()}
+              target="blank"
+              href={url}
+            >
+              <i
+                className={`icon`}
+                style={{
+                  backgroundImage: `url(${dark ? iconDark?.url : icon?.url})`,
+                }}
+              ></i>
+            </a>
+          )
+        }
+      )}
     </div>
   )
 }
